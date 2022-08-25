@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/aboutPage.js":
+/*!**************************!*\
+  !*** ./src/aboutPage.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"aboutPage\": () => (/* binding */ aboutPage)\n/* harmony export */ });\n/* harmony import */ var _images_HF_chicken_corn_tacos_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/HF-chicken-corn-tacos.jpg */ \"./src/images/HF-chicken-corn-tacos.jpg\");\n\n\nconst aboutPage = () => {\n  const div = document.createElement('div');\n  const header = document.createElement('h1');\n  header.textContent = \"HF Kitchens'n'such\";\n  header.style.color = \"purple\";\n  div.appendChild(header);\n  const image = document.createElement('img');\n  image.src = _images_HF_chicken_corn_tacos_jpg__WEBPACK_IMPORTED_MODULE_0__;\n  image.alt = \"Chicken/Corn Tacos\";\n  image.width = \"500\";\n  div.appendChild(image);\n  const description = document.createElement('p');\n  description.textContent = \"Love the idea of a meal from a kit, but don't feel like\\\n    cooking a mealkit meal? We've got you covered! At HFK'n's, we make mealkit meals\\\n    come to life in a cozy restaurant setting. Just order your meal using our app and\\\n    we'll deliver it to your table, freshly cooked, right from the kit! No messy\\\n    unboxing, chopping, opening packages or cooking at all. It's what a mealkit meal\\\n    should be. No effort, just pretty good food at restaurant prices. Just sit back\\\n    and relax!\";\n  div.appendChild(description);\n  return div;\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/aboutPage.js?");
+
+/***/ }),
+
 /***/ "./src/contactPage.js":
 /*!****************************!*\
   !*** ./src/contactPage.js ***!
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contactPage\": () => (/* binding */ contactPage)\n/* harmony export */ });\n/* harmony import */ var _images_HF_roasted_veggies_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/HF-roasted-veggies.jpg */ \"./src/images/HF-roasted-veggies.jpg\");\n\n\nconst contactPage = () => {\n  const div = document.createElement('div');\n  const header = document.createElement('h1');\n  header.textContent = \"HF Kitchens'n'such\";\n  header.style.color = \"purple\";\n  div.appendChild(header);\n  const subheader = document.createElement('h2');\n  subheader.textContent = \"Contact Us\"\n  subheader.style.fontStyle = \"italic\";\n  subheader.style.color = \"red\";\n  div.appendChild(subheader);\n  const image = document.createElement('img');\n  image.src = _images_HF_roasted_veggies_jpg__WEBPACK_IMPORTED_MODULE_0__;\n  image.alt = \"Roasted Veggies\";\n  image.width = \"300\";\n  div.appendChild(image);\n  const description = document.createElement('p');\n  description.textContent = \"Phone, Email, hours, blah blah blaaha\";\n  div.appendChild(description);\n  return div;\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/contactPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contactPage\": () => (/* binding */ contactPage)\n/* harmony export */ });\n/* harmony import */ var _images_HF_roasted_veggies_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/HF-roasted-veggies.jpg */ \"./src/images/HF-roasted-veggies.jpg\");\n\n\nconst contactPage = () => {\n  const div = document.createElement('div');\n  const header = document.createElement('h1');\n  header.textContent = \"HF Kitchens'n'such\";\n  header.style.color = \"purple\";\n  div.appendChild(header);\n  const image = document.createElement('img');\n  image.src = _images_HF_roasted_veggies_jpg__WEBPACK_IMPORTED_MODULE_0__;\n  image.alt = \"Roasted Veggies\";\n  image.width = \"300\";\n  div.appendChild(image);\n  const description = document.createElement('p');\n  description.textContent = \"Phone, Email, hours, blah blah blaaha\";\n  div.appendChild(description);\n  return div;\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/contactPage.js?");
 
 /***/ }),
 
@@ -26,7 +36,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _contactPage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./contactPage */ \"./src/contactPage.js\");\n\n\nconst div = document.getElementById(\"content\");\ndiv.appendChild((0,_contactPage__WEBPACK_IMPORTED_MODULE_0__.contactPage)());\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _aboutPage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./aboutPage */ \"./src/aboutPage.js\");\n/* harmony import */ var _menuPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menuPage */ \"./src/menuPage.js\");\n/* harmony import */ var _contactPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contactPage */ \"./src/contactPage.js\");\n\n\n\n\nconst tab = document.createElement('div')\nconst tabs = document.createElement('div');\nconst homeTab = document.createElement('h2');\nhomeTab.textContent = \"Home\"\nhomeTab.style.fontStyle = \"italic\";\nhomeTab.style.color = \"purple\";\nhomeTab.addEventListener('click', () => {\n  tab.replaceChildren();\n  tab.appendChild((0,_aboutPage__WEBPACK_IMPORTED_MODULE_0__.aboutPage)());\n});\ntabs.appendChild(homeTab);\nconst menuTab = document.createElement('h2');\nmenuTab.textContent = \"Menu\"\nmenuTab.style.fontStyle = \"italic\";\nmenuTab.style.color = \"purple\";\nmenuTab.addEventListener('click', () => {\n  tab.replaceChildren();\n  tab.appendChild((0,_menuPage__WEBPACK_IMPORTED_MODULE_1__.menuPage)());\n});\ntabs.appendChild(menuTab);\nconst contactTab = document.createElement('h2');\ncontactTab.textContent = \"Contact Us\"\ncontactTab.style.fontStyle = \"italic\";\ncontactTab.style.color = \"purple\";\ncontactTab.addEventListener('click', () => {\n  tab.replaceChildren();\n  tab.appendChild((0,_contactPage__WEBPACK_IMPORTED_MODULE_2__.contactPage)());\n});\ntabs.appendChild(contactTab);\n//render a background image too, later\nconst div = document.getElementById(\"content\");\ndiv.appendChild(tabs);\ndiv.appendChild(tab);\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menuPage.js":
+/*!*************************!*\
+  !*** ./src/menuPage.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menuPage\": () => (/* binding */ menuPage)\n/* harmony export */ });\n/* harmony import */ var _images_HF_roasted_veggies_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/HF-roasted-veggies.jpg */ \"./src/images/HF-roasted-veggies.jpg\");\n\n\nconst menuPage = () => {\n  const div = document.createElement('div');\n  const header = document.createElement('h1');\n  header.textContent = \"HF Kitchens'n'such\";\n  header.style.color = \"purple\";\n  div.appendChild(header);\n  const image = document.createElement('img');\n  image.src = _images_HF_roasted_veggies_jpg__WEBPACK_IMPORTED_MODULE_0__;\n  image.alt = \"Roasted Veggies\";\n  image.width = \"300\";\n  div.appendChild(image);\n  const description = document.createElement('p');\n  description.textContent = \"Our first recipe has us thinking outside the box.\\\n    We took two different mealkits and grabbed only the roasted veggie parts, and mixed\\\n    and matched the spices provided to create something we like to call an original\\\n    recipe! Enjoy this feast of veggie roast!\";\n  div.appendChild(description);\n  return div;\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/menuPage.js?");
+
+/***/ }),
+
+/***/ "./src/images/HF-chicken-corn-tacos.jpg":
+/*!**********************************************!*\
+  !*** ./src/images/HF-chicken-corn-tacos.jpg ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"8370bf288b30755a3d3b.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/images/HF-chicken-corn-tacos.jpg?");
 
 /***/ }),
 
