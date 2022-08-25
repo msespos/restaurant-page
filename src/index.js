@@ -1,4 +1,4 @@
-import { initialPage } from './initialPage';
+import { contactPage } from './contactPage';
 
 const div = document.getElementById("content");
-div.appendChild(initialPage());
+div.appendChild(contactPage());

@@ -1,6 +1,6 @@
-import Veggies from "./images/HF-roasted-veggies.jpg";
+import Tacos from "./images/HF-chicken-corn-tacos.jpg";
 
-const initialPage = () => {
+const aboutPage = () => {
   const div = document.createElement('div');
   const header = document.createElement('h1');
   header.textContent = "HF Kitchens'n'such";
@@ -12,8 +12,8 @@ const initialPage = () => {
   subheader.style.color = "red";
   div.appendChild(subheader);
   const image = document.createElement('img');
-  image.src = Veggies;
-  image.alt = "Roasted Veggies";
+  image.src = Tacos;
+  image.alt = "Chicken/Corn Tacos";
   image.width = "500";
   div.appendChild(image);
   const description = document.createElement('p');
@@ -27,4 +27,4 @@ const initialPage = () => {
   div.appendChild(description);
   return div;
 }
-export { initialPage };
+export { aboutPage };
