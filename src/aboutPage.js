@@ -6,11 +6,6 @@ const aboutPage = () => {
   header.textContent = "HF Kitchens'n'such";
   header.style.color = "purple";
   div.appendChild(header);
-  const subheader = document.createElement('h2');
-  subheader.textContent = "Your one-stop source for mealkit delights!"
-  subheader.style.fontStyle = "italic";
-  subheader.style.color = "red";
-  div.appendChild(subheader);
   const image = document.createElement('img');
   image.src = Tacos;
   image.alt = "Chicken/Corn Tacos";

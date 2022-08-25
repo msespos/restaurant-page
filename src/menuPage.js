@@ -6,11 +6,6 @@ const menuPage = () => {
   header.textContent = "HF Kitchens'n'such";
   header.style.color = "purple";
   div.appendChild(header);
-  const subheader = document.createElement('h2');
-  subheader.textContent = "Menu"
-  subheader.style.fontStyle = "italic";
-  subheader.style.color = "red";
-  div.appendChild(subheader);
   const image = document.createElement('img');
   image.src = Veggies;
   image.alt = "Roasted Veggies";
