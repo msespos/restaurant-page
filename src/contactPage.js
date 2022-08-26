@@ -1,18 +1,14 @@
-import Veggies from "./images/HF-roasted-veggies.jpg";
+import Taquitos from "./images/HF-taquitos.jpg";
 
 const contactPage = () => {
   const div = document.createElement('div');
-  const header = document.createElement('h1');
-  header.textContent = "HF Kitchens'n'such";
-  header.style.color = "purple";
-  div.appendChild(header);
   const image = document.createElement('img');
-  image.src = Veggies;
-  image.alt = "Roasted Veggies";
-  image.width = "300";
+  image.classList.add("image");
+  image.src = Taquitos;
+  image.alt = "Taquitos";
   div.appendChild(image);
   const description = document.createElement('p');
-  description.textContent = "Phone, Email, hours, blah blah blaaha";
+  description.textContent = "Phone, Email, hours, blah blah blah";
   div.appendChild(description);
   return div;
 }
